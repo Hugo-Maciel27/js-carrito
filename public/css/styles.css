@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    /* margin-bottom: 20px; */
+  }
+  
+  h1 {
+    color: rgb(225, 76, 65);
+    text-transform: uppercase;
+    font-weight: 500px;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  #cesta-carrito {
+    border: none;
+    color: rgb(225, 76, 65);
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+  }
+  
+  #cesta-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(225, 76, 65);
+  }
+  
+  #cesta-carrito:focus {
+    outline: none;
+  }
+  
+  #producto-contenedor {
+    display: grid;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  p {
+    line-height: 1.8;
+  }
+  
+  .card {
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  
+  select {
+    display: inline;
+    text-align: center;
+    border: 1px solid lightskyblue;
+  }
+  
+  .modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+  }
+  
+  .modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  
+  .modal-active .modal-carrito {
+    margin-top: 0;
+  }
+  
+  .modal-carrito h3 {
+    color: rgb(225, 76, 65);
+    padding-bottom: 5px;
+  }
+  
+  .modal-carrito #btn-cerrar-carrito {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: rgb(225, 76, 65) !important;
+    border: none;
+    background-color: white;
+  }
+  
+  .modal-carrito #btn-cerrar-carrito:hover {
+    cursor: pointer;
+  }
+  
+  .modal-carrito #btn-cerrar-carrito:focus {
+    outline: none;
+  }
+  
+  .modal-carrito .producto-precio {
+    padding-top: 10px;
+  }
+  
+  .card .card-image .card-title {
+    color: rgb(225, 76, 65);
+    position: unset
+  }
+  
+  .productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .productoEnCarrito:hover {
+    border-left: 5px solid rgb(225, 76, 65);
+  }
+  
+  .boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .boton-eliminar:hover {
+    cursor: pointer;
+  }
+  
+  .boton-eliminar:focus {
+    outline: none;
+  }
+
+  .contenedor--background{
+    padding: 10vh; 
+    border-top: 10px; 
+    background-image: url(../images/POTW-16th-November-Website-Image.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    }
+    
+    .cont-temporizador{
+      display: flex;
+      justify-content: center;   
+      margin-top: 50px; 
+    }
+    
+    .cont-temporizador .bloque{
+      margin: 0px 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .cont-temporizador .bloque div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(80, 80, 80);
+      box-shadow: 0px 0px 6px 2px #727272 inset;
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: bold;
+      width: 100px;
+      height: 70px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    
+    .cont-temporizador .bloque p{
+      font-size: 11px;
+      font-weight: bold;
+      color: #d6d6d6;
+    }
+    .imagenCarrito{
+      font-size: 11px;
+      width: 80px;
+      
+    }
+    .precio{
+      font-size: 1.5rem;
+      color: tomato;
+    }
+
+    .precioProducto{
+      font-size: 1.4rem;
+      color: #048bde;
+    }
+    
