@@ -1,8 +1,6 @@
-import { actualizarCarrito } from "./actualizarCarrito.js";
 import { carritoIndex } from "./carritoIndex.js";
 
 
-let carrito = []
 
 export const mostrarProductos = (productos) => {
 
