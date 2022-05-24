@@ -16,7 +16,7 @@ const productos = [
         componente: "CPU",
         precio: 3000,
         desc: "Ryzen™ 3 es una CPU de ocho núcleos y 16 subprocesos que está a la altura de las exigencias de los jugadores y creadores",
-        img:"public/images/LD0005368402_2.jpg",
+        img:"/public/images/LD0005368402_2.jpg",
         stock: 5
     },
     {
