@@ -25,7 +25,7 @@ const productos = [
         componente: "Placa de video",
         precio: 15000,
         desc: "La GPU más rápida del mundo. Obtén la ventaja competitiva que necesitas con GeForce RTX™. Gráficos realistas con un rendimiento increíblemente rápido.",
-        img:"public/images/placaNvidia3080.jpg",
+        img:"./public/images/placaNvidia3080.jpg",
         stock: 2
     },
     {
