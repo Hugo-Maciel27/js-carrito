@@ -43,7 +43,7 @@ const productos = [
         componente: "Notebook",
         precio: 12000,
         desc: "Su pantalla LED de 15.6 y 1920x1080 px de resolución te brindará colores más vivos y definidos. Su procesador Intel Core i5 de 4 núcleos, está pensado para aquellas personas generadoras y consumidoras de contenidos.",
-        img:"public/images/notebook-msi.png",
+        img:'public/images/notebook-msi.png',
         stock: 5
     },
     {
@@ -52,7 +52,7 @@ const productos = [
         componente: "memoria ram",
         precio: 1000,
         desc: "Su capacidad de 8 GB hace de esta memoria un soporte ideal para trabajos con documentos de alta complejidad, navegación en la web con múltiples pestañas, juegos y contenidos multimedia",
-        img:"public/images/hyperx-fury-rgb-32000mhz.jpg",
+        img:'public/images/hyperx-fury-rgb-32000mhz.jpg',
         stock: 6
     }
     

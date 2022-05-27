@@ -25,7 +25,7 @@
   }
   
   h1 {
-    color: rgb(225, 76, 65);
+    color: rgb(65, 182, 225);
     text-transform: uppercase;
     font-weight: 500px;
     font-size: 30px;
@@ -34,7 +34,7 @@
   
   #cesta-carrito {
     border: none;
-    color: rgb(225, 76, 65);
+    color: rgb(65, 182, 225);
     font-size: 30px;
     background-color: white;
     border-radius: 50%;
@@ -45,7 +45,7 @@
   #cesta-carrito:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(225, 76, 65);
+    background-color: rgb(65, 182, 225);
   }
   
   #cesta-carrito:focus {
@@ -115,7 +115,7 @@
   }
   
   .modal-carrito h3 {
-    color: rgb(225, 76, 65);
+    color: rgb(65, 182, 225);
     padding-bottom: 5px;
   }
   
@@ -124,7 +124,7 @@
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: rgb(225, 76, 65) !important;
+    color: rgb(65, 182, 225) !important;
     border: none;
     background-color: white;
   }
@@ -142,7 +142,7 @@
   }
   
   .card .card-image .card-title {
-    color: rgb(225, 76, 65);
+    color: rgb(65, 182, 225);
     position: unset
   }
   
@@ -162,7 +162,7 @@
   
   .boton-eliminar {
     background-color: white;
-    color: red;
+    color: black;
     border: none;
     font-size: 20px;
   }
@@ -223,7 +223,7 @@
     }
     .precio{
       font-size: 1.5rem;
-      color: tomato;
+      color: rgb(65, 182, 225);
     }
 
     .precioProducto{
