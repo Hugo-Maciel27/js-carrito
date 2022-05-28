@@ -1,8 +1,8 @@
 import { actualizarCarrito } from "./actualizarCarrito.js";
 import { productos } from "./stock.js";
-const vaciarCarrito = document.getElementById('vaciarCarrito');
+const vaciarCarrito = document.getElementById('btn-vaciar');
 const contenedorCarrito = document.getElementById('carrito-contenedor');
-let carritoDeCompras = [];
+export let carritoDeCompras = [];
 
 vaciarCarrito.addEventListener('click', () => {
   carritoDeCompras.length = 0
