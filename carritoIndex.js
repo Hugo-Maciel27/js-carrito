@@ -25,13 +25,24 @@ export const eliminarProductoCarrito = (productoId) => {
   }
   let botonEliminar = document.getElementById(`eliminar${productoId}`);
   botonEliminar.addEventListener('click', () => {
-      botonEliminar.parentElement.remove();
-      console.log("antes",carritoDeCompras)
-      carritoDeCompras = carritoDeCompras.filter(el => el.id != productoId);
-      console.log("despues",carritoDeCompras)
-      actualizarCarrito(carritoDeCompras);
+    Swal.fire({
+      title: '¿Desea eliminar el producto?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Eliminar'
+  }).then((result) => {
+    if (result.isConfirmed){
+    botonEliminar.parentElement.remove();
+    console.log("antes",carritoDeCompras)
+    carritoDeCompras = carritoDeCompras.filter(el => el.id != productoId);
+    console.log("despues",carritoDeCompras)
+    actualizarCarrito(carritoDeCompras);
+    }
   });
-}
+});
+}  
 
 const contarProductosRepetidos = (prodRepetido, productoId) => {
   if (prodRepetido) {
