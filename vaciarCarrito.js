@@ -1,5 +1,6 @@
 // Funcion evento Boton "Vaciar Carrito"
-const contenedorCarrito = document.getElementById('vaciarCarrito');
+const contadorCarrito = document.getElementById('contador-carrito');
+const contenedorCarrito = document.getElementById('carrito-contenedor');
 function limpiarHTML() {
     contenedorCarrito.innerHTML = "";
     while (contenedorCarrito.firstChild) {
@@ -9,8 +10,9 @@ function limpiarHTML() {
 
 const btnVaciar = document.getElementById("btn-vaciar");
 const vaciarCarrito = () => {
+    let carritoDeCompras = JSON.parse(localStorage.getItem("carrito")) ?? [];
     if (carritoDeCompras.length > 0) {
-
+        
         // limpia el carrito y el localStorage
         localStorage.clear();
         carritoDeCompras = [];

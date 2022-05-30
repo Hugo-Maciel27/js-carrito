@@ -58,6 +58,7 @@ funcionComprar();
 // Evento Boton Comprar
 const mostrarComprar = document.querySelector('.comprar-active');
 btnComprar.addEventListener('click', () => {
+  let carritoDeCompras = JSON.parse(localStorage.getItem("carrito")) ?? [];
   if (carritoDeCompras.length > 0) {
     mostrarComprar.classList.toggle('comprar-active');
 

@@ -1,15 +1,13 @@
-
 // Funcion Boton "FINALIZAR COMPRA".
 
 
 const btnFinalizarCompra = document.getElementById('btn-fincompra');
 btnFinalizarCompra.addEventListener('click', (e) => {
-    let carritoDeCompras = JSON.parse(localStorage.getItem("carrito")) ?? [];
     e.preventDefault();
 
     // *****Validacion de Formulario Tarjeta*****
     if (carritoDeCompras.length > 0) {
-         
+
         let error = false;
         let errorMensaje = "";
         const radio2 = document.getElementById("pago2");
