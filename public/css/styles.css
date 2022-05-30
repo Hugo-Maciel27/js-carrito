@@ -231,3 +231,30 @@
       color: #048bde;
     }
     
+
+
+    
+.modal__active .modal-carrito {
+  margin-top: 0;
+}
+.comprar-active{
+  opacity: 0;
+  display:none;
+  z-index: 5;
+}
+
+.opcionesPago .active {
+  display: none;
+}
+.btn-floating{
+  display: inline;
+  font-size: 4vh;
+  cursor: pointer;
+  top: 80%;
+  left: 85%;
+  color: rgb(48, 183, 201);
+  position: absolute;
+}
+
+/*  aca*/
+

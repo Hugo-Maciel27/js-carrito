@@ -56,7 +56,7 @@ btnFinalizarCompra.addEventListener('click', (e) => {
         Swal.fire({
             title: 'Realizando Compra',
             html: 'Cargando datos en <b></b> seg.',
-            timer: 3000,
+            timer: 2000,
             timerProgressBar: true,
             didOpen: () => {
                 Swal.showLoading()
